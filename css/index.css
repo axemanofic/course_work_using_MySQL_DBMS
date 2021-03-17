@@ -1,0 +1,186 @@
+/* Основные параметры */
+body
+{
+	background-color: #14085e;
+	color: white;
+	line-height: 2;
+}
+
+h1, div
+{
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+.grid_box
+{
+	text-align: center;
+
+	display: grid;
+
+	grid-gap: 30px;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	margin: 7% 15px;
+}
+
+.grid_box .active
+{
+	grid-column: 1/4;
+}
+
+.grid_box .item
+{
+	padding: 30px 0;
+	background-color: #2f16d4;
+	border-radius: 10px;
+
+	transition: all 0.5s;
+}
+
+.grid_box .item:hover
+{
+	margin: 0 5px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 0;
+	color: black;
+
+	transition: all 0.5s;
+}
+
+.grid_box form
+{
+	grid-column: 2/3;
+}
+
+
+/* Таблица */
+.table
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.table td
+{
+	background-color: #52498d;
+	padding: 5px;
+}
+
+/* Кнопка "НАЗАД", "Редактировать" и "Главное меню" и "Добавить * "*/
+.button
+{
+	color: white;
+	background-color: #2f16d4;
+	border-radius: 5px;
+	padding: 5px;
+	transition: all 0.5s;
+	margin: 5px;
+}
+
+.button:hover
+{
+	color: black;
+	background-color: white;
+	transition: all 0.5s;
+	margin: 5px;
+}
+
+.menu
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.item-page
+{
+	display: flex;
+}
+
+.item-search
+{
+	margin: 0 auto;
+}
+
+/*////////////////////////////////*/
+
+.flex-box
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #2f16d4;
+
+	width: 500px;
+
+	margin: 100px auto;
+
+	text-align: center;
+}
+
+.flex-box .item
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 20px 10px;
+}
+
+.flex-box .item input, select
+{
+	width: 55%;
+	border-radius: 5px;
+}
+
+.flex-box input[type="submit"], input[type="reset"]
+{
+	width: 55%;
+	margin: 5px auto 10px;
+	background-color: white;
+}
+
+.flex-box input[type="file"]
+{
+	align-self: center;
+}
+
+.flex-box-authorization
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 20px 10px;	
+}
+
+.flex-box-menu
+{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 500px;
+	background-color: #2f16d4;
+	border-radius: 10px;
+
+	margin: 0 auto;
+
+	text-align: center;
+}
+
+.fb_active
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #2f16d4;
+	margin: 10px auto 10px;
+	width: 500px;
+	text-align: center;	
+}
